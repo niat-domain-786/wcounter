@@ -1,0 +1,10 @@
+{
+    "editor.formatOnType": true,
+    "editor.lineHeight": 25,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "html.format.endWithNewline": true,
+    "workbench.colorTheme": "Monokai",
+    "editor.fontWeight": "400",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
