@@ -2,8 +2,6 @@
 /public/hot
 /public/material-kit-pro
 /public/theme
-/storage
-/public/storage
 /storage/*.key
 /vendor
 .env
