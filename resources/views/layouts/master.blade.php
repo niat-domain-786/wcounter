@@ -6,29 +6,30 @@
   <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.png')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Material Dashboard PRO by Creative Tim</title>
+  <title>Words and characters counter</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   {{-- Canonical SEO --}}
   <link rel="canonical" href="{{url('/')}}" />
   {{--  Social tags      --}}
-  <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 4 dashboard, bootstrap 4, css3 dashboard, bootstrap 4 admin, material dashboard bootstrap 4 dashboard, frontend, responsive bootstrap 4 dashboard, material design, material dashboard bootstrap 4 dashboard">
-  <meta name="description" content="Material Dashboard PRO is a Premium Material Bootstrap 4 Admin with a fresh, new design inspired by Google's Material Design.">
+  <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter">
+  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text.">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="Material Dashboard PRO by Creative Tim">
-  <meta name="twitter:description" content="Material Dashboard PRO is a Premium Material Bootstrap 4 Admin with a fresh, new design inspired by Google's Material Design.">
-  <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image" content="../../../s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_thumbnail.jpg">
+  <meta name="twitter:site" content="@wcounter">
+  <meta name="twitter:title" content="words and characters counter, online tool">
+  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text.">
+
+  <meta name="twitter:creator" content="@wcounter">
+  <meta name="twitter:image" content="#">
   {{-- Open Graph data --}}
   <meta property="fb:app_id" content="655968634437471">
-  <meta property="og:title" content="Material Dashboard PRO by Creative Tim" />
+  <meta property="og:title" content="words and characters counter, online tool" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="dashboard.html" />
-  <meta property="og:image" content="../../../s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_thumbnail.jpg" />
-  <meta property="og:description" content="Material Dashboard PRO is a Premium Material Bootstrap 4 Admin with a fresh, new design inspired by Google's Material Design." />
-  <meta property="og:site_name" content="Creative Tim" />
+  <meta property="og:url" content="{{ url('/') }}" />
+  <meta property="og:image" content="#" />
+  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text." />
+  <meta property="og:site_name" content="Online Word Counter" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
 
 </head>
@@ -37,9 +38,6 @@
 
   <div class="wrappern" id="app" >
 
-
-
-
     <header class="navbar navbar-expand navbar-dark bg-info">
       <div class="col-md-12">
         <div class="row">
@@ -47,7 +45,7 @@
             
     
       <a href="{{ url('/') }}" target="_blank" class="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
-      Simple Word Counter
+      Online Word Counter
     </a> 
   </div>
 
