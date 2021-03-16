@@ -173,8 +173,8 @@
           </nav>
           <div class="copyright float-right">
             &copy;
-            <span>
-        year
+            <span v-text='current_year'>
+        
             </span>, all rights reserved.
           </div>
         </div>
