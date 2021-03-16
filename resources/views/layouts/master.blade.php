@@ -48,6 +48,7 @@
   <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text." />
   <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
+  <meta name="google-site-verification" content="fLOCHpysy-n3OdJo05lRZuDKZrF08sA4rdAWR8LWe6o" />
 
 </head>
 
@@ -184,7 +185,7 @@
 
   {{--   Core JS Files   --}}
   {{-- <script src="{{asset('dashboard/material/assets/js/core/jquery.min.js')}}"></script> --}}
-  <script src="{{asset('js/app.js')}}"></script>
+  <script src="{{asset('js/app.js')}}" defer></script>
   {{-- <script src="{{asset('dashboard/material/assets/js/core/popper.min.js')}}"></script> --}}
   {{-- <script src="{{asset('js/wcounter.js')}}"></script> --}}
   {{-- <script src="{{asset('dashboard/material/assets/js/core/bootstrap-material-design.min.js')}}"></script> --}}
