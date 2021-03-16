@@ -49,6 +49,15 @@
   <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
   <meta name="google-site-verification" content="fLOCHpysy-n3OdJo05lRZuDKZrF08sA4rdAWR8LWe6o" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TH5J6WLP97"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TH5J6WLP97');
+</script>
 
 </head>
 
