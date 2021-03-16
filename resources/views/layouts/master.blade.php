@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/material/assets/img/apple-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.png')}}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/material/assets/img/apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Words and characters counter</title>
@@ -21,15 +21,32 @@
   <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text.">
 
   <meta name="twitter:creator" content="@wcounter">
-  <meta name="twitter:image" content="#">
+  <meta name="twitter:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg">
   {{-- Open Graph data --}}
-  <meta property="fb:app_id" content="655968634437471">
+
+  <meta property="og:locale" content="en_US">
+{{-- <meta property="og:type" content="article"> --}}
+{{-- <meta property="og:title" content="Filter method in JavaScript, ES6 easy Examples - infopediya"> --}}
+{{-- <meta property="og:description" content="The filter method in JavaScript filters arrays or arrays of objects for certain criteria from the existing array and creates a new array. Here are some examples."> --}}
+{{-- <meta property="og:url" content="https://www.infopediya.com/filter-method-in-javascript/"> --}}
+<meta property="og:site_name" content="wcounter.net">
+<meta property="article:tag" content="words and characters counter">
+<meta property="article:tag" content="word counter online">
+<meta property="article:tag" content="Simple words counter">
+<meta property="article:tag" content="paragraph counter">
+<meta property="article:tag" content="character counter tool">
+<meta property="article:tag" content="sentecne counter">
+
+<meta property="og:updated_time" content="2021-17-14T14:58:14+00:00">
+
+
+  <meta property="fb:app_id" content="#">
   <meta property="og:title" content="words and characters counter, online tool" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ url('/') }}" />
-  <meta property="og:image" content="#" />
+  <meta property="og:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg" />
   <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text." />
-  <meta property="og:site_name" content="Online Word Counter" />
+  <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
 
 </head>
