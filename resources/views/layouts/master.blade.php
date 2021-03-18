@@ -48,7 +48,27 @@
   <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text." />
   <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "SoftwareApplication",
+  "name": "word counter",
+  "applicationCategory": "Education, MS Word, Content Writing",
+  "operatingSystem": "Web operating system",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "12887"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "0.00"
+  }
+}
+</script>
   <meta name="google-site-verification" content="fLOCHpysy-n3OdJo05lRZuDKZrF08sA4rdAWR8LWe6o" />
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH5J6WLP97"></script>
 <script>
