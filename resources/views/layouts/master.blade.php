@@ -6,19 +6,19 @@
   <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Free Words, Characters counter & keyword density checker online tool</title>
+  <title>Words, Character counter & keyword density checker - free online tool</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   {{-- Canonical SEO --}}
   <link rel="canonical" href="{{url('/')}}" />
   {{--  Social tags      --}}
-  <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter">
-  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text.">
+  <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter, free online word counter, keyword density checker tool, characters with whitespaces counter tool ">
+  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool.">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
   <meta name="twitter:site" content="@wcounter">
   <meta name="twitter:title" content="words, characters, sentences counter and keyword density checker, online tool">
-  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text.">
+  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool.">
 
   <meta name="twitter:creator" content="@wcounter">
   <meta name="twitter:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg">
@@ -30,16 +30,26 @@
 {{-- <meta property="og:description" content="The filter method in JavaScript filters arrays or arrays of objects for certain criteria from the existing array and creates a new array. Here are some examples."> --}}
 {{-- <meta property="og:url" content="https://www.infopediya.com/filter-method-in-javascript/"> --}}
 <meta property="og:site_name" content="wcounter.net">
+<meta property="article:tag" content="free online word counter">
+<meta property="article:tag" content="online text word counter">
 <meta property="article:tag" content="words and characters counter">
+<meta property="article:tag" content="count words and characters">
+<meta property="article:tag" content="online word and character count">
+<meta property="article:tag" content="keyword density checker tool">
+<meta property="article:tag" content="best keyword density checker">
 <meta property="article:tag" content="word counter online">
 <meta property="article:tag" content="Simple words counter">
 <meta property="article:tag" content="paragraph counter">
+<meta property="article:tag" content="word count tool online">
 <meta property="article:tag" content="character counter tool">
 <meta property="article:tag" content="sentecne counter">
 <meta property="article:tag" content="keyword density checker">
+<meta property="article:tag" content="keyword density checker free  ">
 <meta property="article:tag" content="keyword frequency finder">
 <meta property="article:tag" content="keyword frequency checker">
 <meta property="article:tag" content="keywords highlighter">
+<meta property="article:tag" content="word count and grammar check online">
+<meta property="article:tag" content="spelling and grammar check">
 
 <meta property="og:updated_time" content="2021-18-14T14:58:14+00:00">
 
@@ -49,7 +59,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ url('/') }}" />
   <meta property="og:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg" />
-  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text." />
+  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool." />
   <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
   <script type="application/ld+json">
