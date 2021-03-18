@@ -53,7 +53,7 @@
   "@context": "http://schema.org/",
   "@type": "SoftwareApplication",
   "name": "word counter",
-  "applicationCategory": "Education, MS Word, Content Writing",
+  "applicationCategory": "Education, MS Word, Content Writing, English Text",
   "operatingSystem": "Web operating system",
   "aggregateRating": {
     "@type": "AggregateRating",
