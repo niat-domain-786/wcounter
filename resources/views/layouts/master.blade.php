@@ -6,19 +6,19 @@
   <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Words and characters counter</title>
+  <title>Free Words, Characters counter & keyword density checker online tool</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   {{-- Canonical SEO --}}
   <link rel="canonical" href="{{url('/')}}" />
   {{--  Social tags      --}}
   <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter">
-  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text.">
+  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text.">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
   <meta name="twitter:site" content="@wcounter">
-  <meta name="twitter:title" content="words and characters counter, online tool">
-  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text.">
+  <meta name="twitter:title" content="words, characters, sentences counter and keyword density checker, online tool">
+  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text.">
 
   <meta name="twitter:creator" content="@wcounter">
   <meta name="twitter:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg">
@@ -36,16 +36,20 @@
 <meta property="article:tag" content="paragraph counter">
 <meta property="article:tag" content="character counter tool">
 <meta property="article:tag" content="sentecne counter">
+<meta property="article:tag" content="keyword density checker">
+<meta property="article:tag" content="keyword frequency finder">
+<meta property="article:tag" content="keyword frequency checker">
+<meta property="article:tag" content="keywords highlighter">
 
-<meta property="og:updated_time" content="2021-17-14T14:58:14+00:00">
+<meta property="og:updated_time" content="2021-18-14T14:58:14+00:00">
 
 
   <meta property="fb:app_id" content="#">
-  <meta property="og:title" content="words and characters counter, online tool" />
+  <meta property="og:title" content="Free Words, Characters counter & keyword density checker online tool" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ url('/') }}" />
   <meta property="og:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg" />
-  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences and paragraphs in plain English text." />
+  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword frequency in plain English text." />
   <meta property="og:site_name" content="Online Word Counter Tools" />
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
   <script type="application/ld+json">
