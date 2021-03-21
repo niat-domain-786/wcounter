@@ -12,11 +12,6 @@ use App\Http\Controllers\ArticleController;
 Route::resource('article', ArticleController::class);
 Route::post('html-to-text', [ArticleController::class, 'html_to_text']);
 
-Route::get('/', function () {
-    return view('layouts.master');
-});
-
-Route::get('keyword-density-finder', function () {
-    return view('layouts.master');
-});
+Route::get('/', fn () => view('layouts.master'));
+// Route::get('keyword-density-finder', fn () => view('layouts.master'));
 

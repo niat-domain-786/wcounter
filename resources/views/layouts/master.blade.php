@@ -8,28 +8,22 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Words, Character counter & keyword density checker - free online tool</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+
   {{-- Canonical SEO --}}
   <link rel="canonical" href="{{url('/')}}" />
+
   {{--  Social tags      --}}
   <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter, free online word counter, keyword density checker tool, characters with whitespaces counter tool ">
-  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool.">
+  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in plain english text.">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
   <meta name="twitter:site" content="@wcounter">
-  <meta name="twitter:title" content="words, characters, sentences counter and keyword density checker, online tool">
-  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool.">
+  <meta name="twitter:title" content="words, characters, sentences counter and keyword density checker | free online tool">
+  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculates keyword density in plain english text.">
 
   <meta name="twitter:creator" content="@wcounter">
   <meta name="twitter:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg">
-  {{-- Open Graph data --}}
-
-  <meta property="og:locale" content="en_US">
-{{-- <meta property="og:type" content="article"> --}}
-{{-- <meta property="og:title" content="Filter method in JavaScript, ES6 easy Examples - infopediya"> --}}
-{{-- <meta property="og:description" content="The filter method in JavaScript filters arrays or arrays of objects for certain criteria from the existing array and creates a new array. Here are some examples."> --}}
-{{-- <meta property="og:url" content="https://www.infopediya.com/filter-method-in-javascript/"> --}}
-<meta property="og:site_name" content="wcounter.net">
 <meta property="article:tag" content="free online word counter">
 <meta property="article:tag" content="online text word counter">
 <meta property="article:tag" content="words and characters counter">
@@ -51,16 +45,20 @@
 <meta property="article:tag" content="word count and grammar check online">
 <meta property="article:tag" content="spelling and grammar check">
 
-<meta property="og:updated_time" content="2021-18-14T14:58:14+00:00">
+{{-- <meta property="og:updated_time" content="<?php echo now(); ?>"> --}}
+<meta property="og:updated_time" content="2021-03-21 08:18:32">
 
 
-  <meta property="fb:app_id" content="#">
-  <meta property="og:title" content="Free Words, Characters counter & keyword density checker online tool" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ url('/') }}" />
+  {{-- <meta property="fb:app_id" content="#"> --}}
   <meta property="og:image" content="https://images.freeimages.com/images/small-previews/cfd/writinghand-1238351.jpg" />
-  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences paragraphs & keyword density checker tool." />
   <meta property="og:site_name" content="Online Word Counter Tools" />
+  {{-- Open Graph data --}}
+
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="words, characters, sentences counter and keyword density checker | free online tool">
+  <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in plain english text.">
+  <meta property="og:url" content="https://www.wcounter.net">
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
   <script type="application/ld+json">
 {
@@ -226,56 +224,7 @@
     </div>
   </div>
 
-  {{--   Core JS Files   --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/core/jquery.min.js')}}"></script> --}}
-  <script src="{{asset('js/app.js')}}" async></script>
-  {{-- <script src="{{asset('dashboard/material/assets/js/core/popper.min.js')}}"></script> --}}
-  {{-- <script src="{{asset('js/wcounter.js')}}"></script> --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/core/bootstrap-material-design.min.js')}}"></script> --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/perfect-scrollbar.min.js')}}"></script> --}}
-  {{-- Plugin for the momentJs  --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/moment.min.js')}}"></script> --}}
-  {{--  Plugin for Sweet Alert --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/sweetalert2.js')}}"></script> --}}
-  {{-- Forms Validations Plugin --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/jquery.validate.min.js')}}"></script> --}}
-  {{-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/jquery.bootstrap-wizard.js')}}"></script> --}}
-  {{--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/bootstrap-selectpicker.js')}}"></script> --}}
-  {{--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/bootstrap-datetimepicker.min.js')}}"></script> --}}
-  {{--  DataTables.net Plugin, full documentation here: https://datatables.net/  --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/jquery.dataTables.min.js')}}"></script> --}}
-  {{--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/bootstrap-tagsinput.js')}}"></script> --}}
-  {{-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/jasny-bootstrap.min.js')}}"></script> --}}
-  {{--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/fullcalendar.min.js')}}"></script> --}}
-  {{-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/jquery-jvectormap.js')}}"></script> --}}
-  {{--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/nouislider.min.js')}}"></script> --}}
-  {{-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert --}}
-  {{-- <script src="../../../cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js')}}"></script> --}}
-  {{-- Library for adding dinamically elements --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/arrive.min.js')}}"></script> --}}
-  {{--  Google Maps Plugin    --}}
-  {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script> --}}
-  {{-- Place this tag in your head or just before your close body tag. --}}
-  {{-- <script async defer src="../../../buttons.github.io/buttons.js')}}"></script> --}}
-  {{-- Chartist JS --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/chartist.min.js')}}"></script> --}}
-  {{--  Notifications Plugin    --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/plugins/bootstrap-notify.js')}}"></script> --}}
-  {{-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc --}}
-  {{-- <script src="{{asset('dashboard/material/assets/js/material-dashboard.min6c54.js?v=2.2.2')}}" type="text/javascript"></script> --}}
-  {{-- Material Dashboard DEMO methods, don't include it in your project! --}}
- 
-  {{-- Sharrre libray --}}
-  {{-- <script src="{{asset('dashboard/material/assets/demo/jquery.sharrre.js')}}"></script> --}}
- 
-</body>
 
+  <script src="{{asset('js/app.js')}}" async></script>
+</body>
 </html>
