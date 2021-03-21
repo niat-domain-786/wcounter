@@ -15,3 +15,7 @@ Route::post('html-to-text', [ArticleController::class, 'html_to_text']);
 Route::get('/', fn () => view('layouts.master'));
 // Route::get('keyword-density-finder', fn () => view('layouts.master'));
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
