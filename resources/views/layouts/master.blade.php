@@ -6,15 +6,16 @@
   <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Words, Character counter & keyword density checker - free online tool</title>
+  <title>Word counter - count Characters & keyword density checker</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
   {{-- Canonical SEO --}}
   <link rel="canonical" href="{{url('/')}}" />
 
   {{--  Social tags      --}}
-  <meta name="keywords" content="word counter online, Simple words counter, paragraph counter, character counter tool, sentecne counter, free online word counter, keyword density checker tool, characters with whitespaces counter tool ">
-  <meta name="description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in plain english text.">
+  <meta name="keywords" content="word counter, Simple words counter, paragraph counter, character counter tool, sentecne counter, free online word counter, keyword density checker tool, characters with whitespaces counter tool ">
+
+  <meta name="description" content="word counter is a free online tool to count the words, characters, characters with whitespaces & best keyword density checker tool.">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
