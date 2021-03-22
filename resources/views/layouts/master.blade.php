@@ -115,8 +115,8 @@
           <li class="nav-item">
             <a href="{{ url('/') }}" class="nav-link"> Home </a></li> 
             <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Blog</a></li> 
-            <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Contact</a></li>  
-            <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">About</a></li> 
+            <li class="nav-item"><a href="{{url('/about–us')}}" class="nav-link">About</a></li> 
+            
               
           </ul>
     </div>
@@ -191,26 +191,13 @@
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
+
               <li>
-                <a href="{{url('/')}}">
-                  Home
-                </a>
+
+                  <a href="{{url('/privacy–policy')}}">Privacy</a>
               </li>
-              <li>
-                <a href="{{ url('/') }}">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="{{ url('/') }}">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="{{ url('/') }}">
-                  Licenses
-                </a>
-              </li>
+ 
+            <li><a href="{{url('/disclaimer')}}">Disclaimer</a></li>
             </ul>
           </nav>
           <div class="copyright float-right">
