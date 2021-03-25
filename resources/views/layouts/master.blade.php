@@ -189,7 +189,8 @@
 
 <div class="container " style="background-color: #fff; padding-top: 2rem; padding-left: 1rem; padding-bottom: 2rem; padding-right: 1rem; border-radius: 6px;">
 
-  <h1 style="font-size: 2rem;">Word counter - count Characters & Best keyword density checker</h1>
+  <h1 style="font-size: 2rem; padding-bottom: 2rem;">Word counter - count Characters & Best keyword density checker</h1>
+
 <!-- wp:paragraph -->
 <h2 style="font-size: 1.7rem;"><strong>An Introduction</strong></h2>
 <!-- /wp:paragraph -->
