@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/material/assets/img/apple-touch-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/apple-touch-icon.png')}}">
+  <link rel="icon" type="image/png" href="{{asset('images/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Word counter - count Characters & Best keyword density checker</title>
@@ -47,7 +47,7 @@
 <meta property="article:tag" content="spelling and grammar check">
 
 {{-- <meta property="og:updated_time" content="<?php echo now(); ?>"> --}}
-<meta property="og:updated_time" content="2021-03-25 16:20:15">
+<meta property="og:updated_time" content="2021-04-03 10:45:23">
 
 
   {{-- <meta property="fb:app_id" content="#"> --}}
@@ -60,6 +60,7 @@
   <meta property="og:title" content="words, characters, sentences counter and keyword density checker | free online tool">
   <meta property="og:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in plain english text.">
   <meta property="og:url" content="https://www.wcounter.net">
+
   <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
   <script type="application/ld+json">
 {
@@ -159,7 +160,7 @@
                     <div class="form-group bmd-form-group">
                       {{-- <label for="examplePass" class="bmd-label-floating">Password</label> --}}
                       <textarea 
-                      class="form-control" 
+                      class="form-control textarea" 
                       style="border:1px solid #eee; padding: 0.5rem"   
                       id="main_text" 
                       cols="30" 
@@ -260,7 +261,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="https://grammarly.com" target="_blank">Grammar</a> plays an effective role in writing for a blog or anything else. It is considered the backbone of a text or content. It will be very helpful to you if you often use Google Documents. Whenever you use a wrong word or a spelling it will be underlined instantly and it provides you the correct form or word. So, you can replace or remove the wrong word that you have used there. Thus, it will upgrade your writing skill a lot. It will show all your mistakes that either you have misused an active or passive voice or any punctuation. You'll get the number of mistakes as well. You can choose to use its grammar checking services at no cost.</p>
+<p><a href="https://grammarly.com" target="_blank" rel="noreferrer">Grammar</a> plays an effective role in writing for a blog or anything else. It is considered the backbone of a text or content. It will be very helpful to you if you often use Google Documents. Whenever you use a wrong word or a spelling it will be underlined instantly and it provides you the correct form or word. So, you can replace or remove the wrong word that you have used there. Thus, it will upgrade your writing skill a lot. It will show all your mistakes that either you have misused an active or passive voice or any punctuation. You'll get the number of mistakes as well. You can choose to use its grammar checking services at no cost.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -318,7 +319,6 @@
       </footer>
     </div>
   </div>
-
 
   <script src="{{asset('js/app.js')}}" async></script>
 </body>

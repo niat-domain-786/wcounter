@@ -1,7 +1,6 @@
 /node_modules
 /public/hot
-/public/material-kit-pro
-/public/theme
+/public/storage
 /storage/*.key
 /vendor
 .env
