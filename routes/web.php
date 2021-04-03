@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/welcome', fn () => view('welcome'));
 
 Route::get('/', fn () => view('layouts.master'));
+Route::get('/keyword–density–calculator–tool', fn () => view('posts.post1'));
 
 Route::get('privacy–policy', fn () => view('pages.privacy'));
 Route::get('about–us', fn () => view('pages.about'));

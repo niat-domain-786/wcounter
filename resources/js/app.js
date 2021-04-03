@@ -26,6 +26,11 @@ const routes = [
         path: "/keyword-density-finder",
         component: keyword_density_finder
     },
+
+    {
+        path: "/keyword–density–calculator–tool",
+        component: char_counter
+    },
 ];
 
 // Vue Router Object
