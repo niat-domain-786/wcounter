@@ -193,7 +193,7 @@
 
   <h1 style="font-size: 2rem; padding-bottom: 2rem;">keyword density calculator tool - count Words, Characters, Paragraphs, and sentences</h1>
   <div class="container">
-    <img src="https://cdn.pixabay.com/photo/2014/08/26/19/21/document-428338_960_720.jpg" style=" margin-right: auto; margin-left: auto; display: block;">
+    <img src="https://cdn.pixabay.com/photo/2014/08/26/19/21/document-428338_960_720.jpg" style=" margin-right: auto; margin-left: auto; display: block;  max-width: 100%; height: auto;">
   </div>
 
 <!-- wp:paragraph -->
