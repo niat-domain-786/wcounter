@@ -287,7 +287,9 @@
 <!-- wp:paragraph -->
 <p>Words are like bread and butter to a writer and each word in the text represents a unique aspect of story and writer as well. So, words are very dear to a writer. Thus, it stills a great achievement to know the number of words behind a lovely content or a text. So, make your all words count with word counter that you have placed in the text for a reason. I think word counter will be very helpful, peaceful and a peace of satisfaction for you.</p>
 <!-- /wp:paragraph -->
-
+<div class="container">
+  <a href="{{url('/keyword–density–calculator–tool')}}">Next Post: keyword density calculator</a>
+</div>
 
 {{-- /content --}}
 
