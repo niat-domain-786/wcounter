@@ -47,7 +47,7 @@
 <meta property="article:tag" content="spelling and grammar check">
 
 {{-- <meta property="og:updated_time" content="<?php echo now(); ?>"> --}}
-<meta property="og:updated_time" content="2021-04-03 10:45:23">
+<meta property="og:updated_time" content="2021-04-03 18:00:31">
 
 
   {{-- <meta property="fb:app_id" content="#"> --}}
