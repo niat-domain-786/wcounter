@@ -1,58 +1,22 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/material/assets/img/apple-touch-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-
+@extends('layouts.post')
+@section('title')
 	<title>Privacy Policy for wcounter</title>
-</head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{url('/')}}">Online Word Counter</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{url('/')}}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/about–us')}}">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/privacy–policy')}}">Privacy Policy</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/disclaimer')}}">Disclaimer</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container py-4">
-
-
-	
-
+@endsection
+@section('canonical')
+  <link rel="canonical" href="{{url('/privacy–policy')}}" />
+@endsection
+@section('component')
+  <word-counter v-on:keyword_changed = "text_length"></word-counter> 
+@endsection
+@section('article')
 <h1 style="font-size: 2rem;">Privacy Policy for wcounter</h1>
 
 <p>At wcounter, accessible from https://www.wcounter.net/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by wcounter and how we use it.</p>
-
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-
 <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in wcounter. This policy is not applicable to any information collected offline or via channels other than this website.</p>
-
 <h2 style="font-size: 1.4rem;">Consent</h2>
-
 <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-
 <h2 style="font-size: 1.4rem;">Information we collect</h2>
-
 <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
 <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
 <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
@@ -121,11 +85,5 @@
 <p>wcounter does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
 
 </P>
-</div>
 
-
-
-<body>
-
-</body>
-</html>
+@endsection

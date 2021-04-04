@@ -1,32 +1,14 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<title>Privacy Policy for wcounter</title>
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-
-</head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Online Word Counter</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.wcounter.net/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container py-4">
+@extends('layouts.post')
+@section('title')
+  <title>About Us </title>
+@endsection
+@section('canonical')
+  <link rel="canonical" href="{{url('/about–us')}}" />
+@endsection
+@section('component')
+  <word-counter v-on:keyword_changed = "text_length"></word-counter> 
+@endsection
+@section('article')
 
 <p>Welcome to online word counter tool, your number one source for all sources to count words, characters and calculate keyword density. We're dedicated to giving you the very besttool for free, with a focus on simple, fast and accurate online word counter tool.</p>
 
@@ -41,12 +23,5 @@
 
 <p class="py-2"><a href="https://infopediya.com" target="_blank">infopediya team</a></p>
 
+@endsection
 
-</div>
-
-
-
-<body>
-
-</body>
-</html>

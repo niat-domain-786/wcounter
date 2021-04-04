@@ -20,7 +20,6 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "highlight-within-textarea": "^2.0.5",
         "vue": "^2.6.12",
         "vue-router": "^3.4.5"
     }

@@ -1,42 +1,14 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('dashboard/material/assets/img/apple-touch-icon.png')}}">
-  <link rel="icon" type="image/png" href="{{asset('dashboard/material/assets/img/favicon.ico')}}">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<title>Disclaimer for wcounter</title>
-</head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{url('/')}}">Online Word Counter</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-       <li class="nav-item active">
-        <a class="nav-link" href="{{url('/')}}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/about–us')}}">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/privacy–policy')}}">Privacy Policy</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url('/disclaimer')}}">Disclaimer</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container py-4">
-
-
+@extends('layouts.post')
+@section('title')
+  <title>Disclaimer for wcounter</title>
+@endsection
+@section('canonical')
+  <link rel="canonical" href="{{url('/disclaimer')}}" />
+@endsection
+@section('component')
+  <word-counter v-on:keyword_changed = "text_length"></word-counter> 
+@endsection
+@section('article')
 <h2 style="text-align: center;"><b>DISCLAIMER</b></h2>
 
 <p><b>WEBSITE DISCLAIMER</b></p>
@@ -58,13 +30,4 @@
 <p>Should you have any feedback, comments, requests for technical support or other inquiries, please contact us by email: <b>admin@wcounter.net</b>.</p>
 
 
-
-
-</div>
-
-
-
-<body>
-
-</body>
-</html>
+@endsection
