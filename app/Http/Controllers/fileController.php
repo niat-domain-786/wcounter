@@ -27,8 +27,9 @@ class fileController extends Controller
 	            if ($filextension  == 'pdf') {
 
 	            // $path = $file->storeAs('app/public', $filename);
-				$path = 'c:/Program Files/Git/mingw64/bin/pdftotext';
-				$txt = Pdf::getText($file, $path);
+				// $path = 'c:/Program Files/Git/mingw64/bin/pdftotext';
+				// $txt = Pdf::getText($file, $path);
+				$txt = Pdf::getText($file);
 			    return response($txt, 200)->header('Content-Type', 'text/plain');
 
 	            }else{
