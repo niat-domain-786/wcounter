@@ -40,7 +40,7 @@
 
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="PDF to text converter and word counter tool. words counter and keyword density checker | free online tool">
+  <meta property="og:title" content="PDF to text converter and word counter tool and keyword density checker | free online tool">
   <meta property="og:description" content="PDF to text converter and word counter tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in PDF files">
   <meta property="og:url" content="{{url('pdf–to–text–converter–and–words–counter')}}">
 
