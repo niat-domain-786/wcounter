@@ -1,7 +1,7 @@
 window.Vue = require("vue");
 import VueRouter from "vue-router";
-// import axios from "axios";
-// window.axios = axios;
+import axios from "axios";
+window.axios = axios;
 Vue.use(VueRouter);
 // require("./bootstrap");
 
@@ -14,6 +14,7 @@ Vue.use(VueRouter);
 
 // register components (main menu)
 const char_counter = Vue.component("word-counter", require("./components/charCounter.vue").default );
+const char_counter_pdf = Vue.component("word-counter-pdf", require("./components/charCounterPdf.vue").default );
 const keyword_density_finder = Vue.component("keyword-density-finder", require("./components/keyword_density_finder.vue").default );
 
 const routes = [
@@ -43,6 +44,10 @@ const router = new VueRouter({
 let app = new Vue({
     el: "#app",
     router,
+
+  //    mounted:function(){
+  //       this.text_length() //method1 will execute at pageload
+  // },
 
     data: {
         
@@ -128,6 +133,17 @@ let app = new Vue({
                 this.Keyword_density_percentage = 0;
                 this.no_of_Keyword_appear = 0;
             }  
+        },
+
+        text_length_in_pdf:function(){
+            axios.get('/getTxt').then(res => {
+                console.log(res.data);
+                this.text_in_textarea = res.data;
+                // this.words_count  = res.data.words;
+
+                this.text_length();
+            }
+              ).catch(error =>  console.log(error));
         },
     }
 });

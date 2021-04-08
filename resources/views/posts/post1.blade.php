@@ -90,7 +90,7 @@
 
   <h1 style="font-size: 2rem; padding-bottom: 2rem;">keyword density calculator tool - count Words, Characters, Paragraphs, and sentences</h1>
   <div class="container">
-    <img src="https://cdn.pixabay.com/photo/2014/08/26/19/21/document-428338_960_720.jpg" style=" margin-right: auto; margin-left: auto; display: block;  max-width: 100%; height: auto;">
+    <img src="https://cdn.pixabay.com/photo/2014/08/26/19/21/document-428338_960_720.jpg" style=" margin-right: auto; margin-left: auto; display: block;  max-width: 100%; height: auto;" alt="keyword density calculator tool">
   </div>
 
 <!-- wp:paragraph -->
@@ -125,6 +125,10 @@ On your page, placing the keywords in the wrong places is almost as bad as using
 <p>
 If you're trying to find out how to improve your organic traffic. Optimizing your website is necessary if you want to attract new readers or customers. You've already heard about everything from White Hat SEO to long-tail keyword strategies. 
 Some websites use keyword stuffing as a tactic, which is a poor idea. You must concentrate on using the right focus keyword for SEO if you want to increase your search engine ranking. This is the keyword that you want your website or blog post to rank for. Do you want your site to appear when a reader or customer searches for a particular term? If this is the case, you'll need to use focus keywords that rank for that phrase. Don't know where to start when it comes to finding the best marketing keywords for your content?</p>
+
+<div class="container">
+    <p>Next post: <a href="{{url('pdf–to–text–converter–and–words–counter')}}">PDF to text converter tool</a></p>
+</div>
 
 @endsection
 

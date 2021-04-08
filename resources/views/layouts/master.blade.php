@@ -105,7 +105,7 @@
           <div class="col-md-6">
             
     
-      <a href="{{ url('/') }}" target="_blank" class="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
+      <a href="{{ url('/') }}" class="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
       Online Word Counter
     </a> 
   </div>
@@ -116,7 +116,7 @@
         <ul class="navbar-nav bd-navbar-nav flex-row ">
           <li class="nav-item">
             <a href="{{ url('/') }}" class="nav-link"> Home </a></li> 
-            <li class="nav-item"><a href="{{ url('/') }}" class="nav-link">Blog</a></li> 
+            <li class="nav-item"><a href="{{ url('pdf–to–text–converter–and–words–counter') }}" class="nav-link">PDF to Text</a></li> 
             <li class="nav-item"><a href="{{url('/about–us')}}" class="nav-link">About</a></li> 
             
               
@@ -153,7 +153,7 @@
                  {{--  <div class="card-icon">
                     <i class="material-icons">edit</i>
                   </div> --}}
-                  <h3 class="card-title">Input Text</h3>
+                  <h3 class="card-title">Input Your Text <a href="{{url('pdf–to–text–converter–and–words–counter')}}" target="_blank" class="btn btn-info">PDF text counter</a></h3>
                 </div>
                 <div class="card-body ">
                    
@@ -289,6 +289,9 @@
 <!-- /wp:paragraph -->
 <div class="container">
   <a href="{{url('/keyword–density–calculator–tool')}}">Next Post: keyword density calculator</a>
+</div>
+<div class="container">
+  <a href="{{url('pdf–to–text–converter–and–words–counter')}}">Next Post: PDF to text converter tool</a>
 </div>
 
 {{-- /content --}}
