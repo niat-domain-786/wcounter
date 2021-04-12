@@ -116,7 +116,7 @@
         <ul class="navbar-nav bd-navbar-nav flex-row ">
           <li class="nav-item">
             <a href="{{ url('/') }}" class="nav-link"> Home </a></li> 
-            <li class="nav-item"><a href="{{ url('pdf–to–text–converter–and–words–counter') }}" class="nav-link">PDF to Text</a></li> 
+            <li class="nav-item"><a href="{{ url('pdf–to–text–converter') }}" class="nav-link">PDF to Text</a></li> 
             <li class="nav-item"><a href="{{url('/about–us')}}" class="nav-link">About</a></li> 
             
               
@@ -153,7 +153,7 @@
                  {{--  <div class="card-icon">
                     <i class="material-icons">edit</i>
                   </div> --}}
-                  <h3 class="card-title">Input Your Text <a href="{{url('pdf–to–text–converter–and–words–counter')}}" target="_blank" class="btn btn-info">PDF text counter</a></h3>
+                  <h3 class="card-title">Input Your Text <a href="{{url('pdf–to–text–converter')}}" target="_blank" class="btn btn-info">PDF text counter</a></h3>
                 </div>
                 <div class="card-body ">
                    

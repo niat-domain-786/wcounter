@@ -12,6 +12,11 @@ class fileController extends Controller
 
 
 	public function load(){
+	return redirect()->route('pdfhome');
+
+	}
+
+	public function pdfhome(){
 	return view('layouts.pdfcounter');
 
 	}
@@ -33,7 +38,7 @@ class fileController extends Controller
 			    return response($txt, 200)->header('Content-Type', 'text/plain');
 
 	            }else{
-	            	return response('Please select PDF files!', 403)->header('Content-Type', 'text/plain');
+	            	return response('Something went wrong. Please Try again!', 403)->header('Content-Type', 'text/plain');
 	            }	    
         }
 

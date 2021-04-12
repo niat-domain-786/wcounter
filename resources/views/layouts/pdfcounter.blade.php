@@ -6,22 +6,22 @@
   <link rel="icon" type="image/png" href="{{asset('images/favicon.ico')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>PDF to text converter and word counter tool</title>
+  <title>PDF to text converter | free online tool</title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
   {{-- Canonical SEO --}}
-  <link rel="canonical" href="{{url('pdf–to–text–converter–and–words–counter')}}" />
+  <link rel="canonical" href="{{url('pdf–to–text–converter')}}" />
 
   {{--  Social tags      --}}
-  <meta name="keywords" content="word counter, PDF to text converter and word counter tool, character counter tool, sentecne counter, free online word counter, keyword density checker tool, characters with whitespaces counter tool ">
+  <meta name="keywords" content="PDF to text converter and word counter tool, free online word counter, keyword density checker tool ">
 
-  <meta name="description" content="PDF to text converter and word counter tool is simple to use. It only needs a PDF file to upload. once the PDF file is selected our tool will automatically starts uploading it. when the process finishes you will get the overall result with counting words and characters. ">
+  <meta name="description" content="PDF to text converter tool is simple to use. It only needs a PDF file to upload. once the PDF file is selected our tool will automatically starts uploading it. when the process finishes you will get the overall result with counting words and characters. ">
 
   {{-- Twitter Card data --}}
   <meta name="twitter:card" content="product">
   <meta name="twitter:site" content="@wcounter">
-  <meta name="twitter:title" content="PDF to text converter and word counter tool and keyword density checker | free online tool">
-  <meta name="twitter:description" content="A simple online tool to count the words, characters, characters with whitespaces, sentences & calculates keyword density in PDF files.">
+  <meta name="twitter:title" content="PDF to text converter, word counter and keyword density checker | free online tool">
+  <meta name="twitter:description" content="PDF to text converter and word counter tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in PDF files">
 
   <meta name="twitter:creator" content="@wcounter">
   <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2018/05/08/18/46/pdf-3383632__340.png">
@@ -40,9 +40,9 @@
 
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="PDF to text converter and word counter tool and keyword density checker | free online tool">
+  <meta property="og:title" content="PDF to text converter, word counter and keyword density checker | free online tool">
   <meta property="og:description" content="PDF to text converter and word counter tool to count the words, characters, characters with whitespaces, sentences, paragraphs & calculate keyword density in PDF files">
-  <meta property="og:url" content="{{url('pdf–to–text–converter–and–words–counter')}}">
+  <meta property="og:url" content="{{url('pdf–to–text–converter')}}">
 
   {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css" integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q==" crossorigin="anonymous" /> --}}
   <!-- add to document <head> -->
@@ -189,7 +189,7 @@
 
 <div class="container " style="background-color: #fff; padding-top: 2rem; padding-left: 1rem; padding-bottom: 2rem; padding-right: 1rem; border-radius: 6px;">
 
-  <h1 style="font-size: 2rem; padding-bottom: 2rem;">PDF to text converter and word counter tool - count Characters & free keyword density checker</h1>
+  <h1 style="font-size: 2rem; padding-bottom: 2rem;">PDF to text converter tool- count Words & free keyword density checker</h1>
 
     <div class="container">
     <img src="https://cdn.pixabay.com/photo/2018/05/08/18/46/pdf-3383632__340.png" style=" margin-right: auto; margin-left: auto; display: block;  max-width: 100%; height: auto;" alt="PDF to text converter and word counter tool">
@@ -200,7 +200,22 @@
 <!-- wp:paragraph -->
 <p>Portable Document Format (PDF) is a free file format for transferring electronic documents. Adobe created the PDF file format in 1993 to display documents with text formatting and images in a way that is independent of application software, hardware, and operating systems. PDF-encoded documents, forms, photographs, and web pages can be viewed on any computer, including smartphones and tablets.</p>
 
-<!-- wp:paragraph -->
+  <h2 style="font-size: 1.7rem;" >How to extract text?</h2>
+
+<ul>
+  <li>Select PDF files only by clicking the "Upload PDF file" button</li>
+  <li>Wait for a while.</li>
+  <li>Our tool will scan your PDF file and loads plain text in textarea.</li>
+
+</ul>
+  <h2 style="font-size: 1.7rem;" >How to calculate keydensity?</h2>
+
+<ul>
+  <li>Simply type your focus keyword in the input field</li>
+  <li>You will get the result in the top right corner.</li>
+</ul>
+
+
 <h2 style="font-size: 1.7rem;"><strong>How do our PDF to text converter and word counter tool works?</strong></h2>
 <!-- /wp:paragraph -->
 

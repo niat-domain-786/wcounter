@@ -33,4 +33,5 @@ Route::get('disclaimer', 'pageController@disclaimer');
 
 Route::post('uploadpdf', 'fileController@uploadpdf')->name('uploadpdf');
 Route::get('pdf–to–text–converter–and–words–counter', 'fileController@load');
+Route::get('pdf–to–text–converter', 'fileController@pdfhome')->name('pdfhome');;
 Route::get('getTxt', 'fileController@read');

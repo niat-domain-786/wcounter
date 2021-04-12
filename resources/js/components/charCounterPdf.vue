@@ -57,9 +57,10 @@
            <div class="col-md-2 ">
       <label class="custom-file-upload">
                <input type="file" id="file" name="pdffile" v-on:change="fileupload" >
-        <span v-if="loading == 0">Upload PDF File</span> <span v-if="loading == 1">Please wait.....</span>
+        <span v-if="loading == 0">Upload PDF File</span> <span v-if="loading == 1">
+          <img src="https://www.littleivyacademy.com/wp-content/themes/littleivyacademy/assets/images/loading.gif" width="12px">&nbsp;Please wait...</span>
        </label>
-       <small v-if="fileError == 1" class="text-danger">Error! We only support PDF Files</small>
+       <small v-if="fileError == 1" class="text-danger">Something went wrong. Please try again!</small>
 
                <!-- <button v-on:click='fileupload'>upload file</button> -->
 
@@ -175,6 +176,8 @@ export default {
               } ).catch(error  => {
 
                 this.fileError =1;
+                this.loading =0;
+
 
               });
         },
