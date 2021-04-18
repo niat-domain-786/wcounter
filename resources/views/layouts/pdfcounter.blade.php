@@ -10,8 +10,6 @@
     <title>PDF to text converter | free online tool</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
-    @endsection
-
     {{-- Canonical SEO --}}
     <link rel="canonical" href="{{url('pdf–to–text–converter')}}" />
 
@@ -88,7 +86,7 @@
 
 <body class="">
 
-    <div class="wrappern" id="app">
+    <div class="wrappern class" id="app">
 
         <header class="navbar navbar-expand navbar-dark bg-info">
             <div class="col-md-12">
