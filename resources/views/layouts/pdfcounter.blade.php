@@ -58,16 +58,15 @@
 
 
     <link href="{{asset('css/wcounter.css')}}" rel="stylesheet" />
-    <script type="application/ld+json">
+<script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "url": "https://wcounter.net",
             "name": "word counter net",
             "image": "https://cdn.pixabay.com/photo/2018/05/08/18/46/pdf-3383632__340.png",
-            "description": "PDF to text converter, word counter and keyword density checker - free online tool",
+            "description": "PDF to text converter, word counter and keyword density checker - free online tool"
         }
-
     </script>
     <meta name="google-site-verification" content="fLOCHpysy-n3OdJo05lRZuDKZrF08sA4rdAWR8LWe6o" />
 
