@@ -1,95 +1,96 @@
 <template>
-  <div class="row">
-    
-<div class="card">
-  <div class="card-body">
-    <div class="col-md-12">
-      <div class="row">
-        
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fa fa-user mr-2"></i> -->
-            Characters
-          </p>
-          <h3 v-text="this.$parent.character_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">2.7% increase</label> -->
-        </div>
-        <div class="col-md-3 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-hourglass-half mr-2"></i> -->
-            Characters with Whitespaces
-          </p>
-          <h3 v-text="this.$parent.characters_with_whitespaces"></h3>
-          <!-- <label class="badge badge-outline-danger badge-pill">30% decrease</label> -->
-        </div>
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-cloud-download-alt mr-2"></i> -->
-            Words
-          </p>
-          <h3 v-text="this.$parent.words_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">12% increase</label> -->
-        </div>
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-check-circle mr-2"></i> -->
-            Sentences
-          </p>
-          <h3 v-text="this.$parent.sentence_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">57% increase</label> -->
-        </div>
+  <div>
+                    <div class="row">
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold">
+                                            <span v-text="this.$parent.words_count"></span><br> Words </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.character_count"></span><br> Characters</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.characters_with_whitespaces"></span> <br>characters & whitespaces</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.sentence_count"></span> <br> Sentences</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span  v-text="this.$parent.paragraph_count"></span> <br>Paragraphs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <h5 class="card-title mb-4">Keywor Density</h5> -->
+
+                                    <div class="row">
       
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-circle-notch mr-2"></i> -->
-            Paragraphs
-          </p>
-          <h3  v-text="this.$parent.paragraph_count"></h3>
-          <!-- <label class="badge badge-outline-danger badge-pill">16% decrease</label> -->
-        </div>
-    </div>
-      </div>
-  </div>
-  <div class="card-footer">
-    <dir class="col-md-12">
-      <div class="row">
-                <div class="col-md-4">
-                <input
-                type="text"
-                class="form-control"
-                name="k_field"
-                placeholder="Input keyword to find keyword density"
-                v-model="input_text"
-                v-on:keyup="emit_input"
-                v-on:change="emit_input"
-                v-on:input="emit_input"
-                v-on:paste="emit_input"
 
-                />
-            </div>
+                                        <div class="ticket-details col-md-6 my-1">
+                                            <input class="form-control bg-light"        
+                                            name="k_field"
+                                            placeholder="Input keyword to find keyword density"
+                                            v-model="input_text"
+                                            v-on:keyup="emit_input"
+                                            v-on:change="emit_input"
+                                            v-on:input="emit_input"
+                                            v-on:paste="emit_input">
 
-              <div class="col-md-3">
-                <button class="btn btn-info">
-                <strong>Keyword Density :</strong>
-                <strong v-text="this.$parent.Keyword_density_percentage" ></strong> %</button>
+                                        </div>
 
-            </div>
-            <div class="col-md-3 ">
-               <h5 class="keyword_status"><em>The Keyword appears
-                    <strong
-                        v-text="this.$parent.no_of_Keyword_appear"
-                    ></strong>
-                    times.</em>
-                </h5>
-            </div>
-        
-      </div>
-    </dir>
-
-              
-  </div>
-</div>
-</div>
+                                        <div class="ticket-details col-md-6 my-1">
+                                            <label class="p-1 bg-light" style="display: inline-block;border-radius: 4px;cursor: pointer;"> 
+                                             Keyword Density is &nbsp;<span v-text="this.$parent.Keyword_density_percentage"></span>% &amp;&nbsp;repeats: <span v-text="this.$parent.no_of_Keyword_appear"></span> <span v-if="this.$parent.no_of_Keyword_appear > 1">times</span><span v-else >time</span> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
 
   </div>
 </template>
@@ -103,6 +104,7 @@ input[type='text']{
   }
   p{
     height: 20px;
+    font-size: 0.8rem;
   }
   .card{
     margin-bottom: 1px;
@@ -110,6 +112,10 @@ input[type='text']{
   }
   .keyword_status{
     color: #00bcd4;
+  }
+  .font-weight-semibold{
+      font-weight: 600;
+      font-size: .9rem;
   }
 </style>
 

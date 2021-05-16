@@ -9,15 +9,8 @@ use Illuminate\Support\Facades\Storage;
 class fileController extends Controller
 {
 
-
-
-	public function load(){
-	return redirect()->route('pdfhome');
-
-	}
-
 	public function pdfhome(){
-	return view('layouts.pdfcounter');
+	return view('layouts.templates.tools');
 
 	}
 

@@ -1,7 +1,8 @@
-window.Vue = require("vue");
+import Vue from 'vue'
 import VueRouter from "vue-router";
 import axios from "axios";
 window.axios = axios;
+
 Vue.use(VueRouter);
 // require("./bootstrap");
 
@@ -13,12 +14,11 @@ Vue.use(VueRouter);
 // };
 
 // register components (main menu)
-const char_counter = Vue.component("word-counter", require("./components/charCounter.vue").default );
-const char_counter_pdf = Vue.component("word-counter-pdf", require("./components/charCounterPdf.vue").default );
-const keyword_density_finder = Vue.component("keyword-density-finder", require("./components/keyword_density_finder.vue").default );
+const char_counter = Vue.component("word-counter", require("./components/charCounter.vue").default);
+const char_counter_pdf = Vue.component("word-counter-pdf", require("./components/charCounterPdf.vue").default);
+const keyword_density_finder = Vue.component("keyword-density-finder", require("./components/keyword_density_finder.vue").default);
 
-const routes = [
-    {
+const routes = [{
         path: "/",
         component: char_counter
     },
@@ -29,8 +29,12 @@ const routes = [
     },
 
     {
-        path: "/keyword–density–calculator–tool",
+        path: "/keyword-density-calculator-tool",
         component: char_counter
+    },
+    {
+        path: "/pdf-to-text-converter",
+        component: char_counter_pdf
     },
 ];
 
@@ -45,12 +49,12 @@ let app = new Vue({
     el: "#app",
     router,
 
-  //    mounted:function(){
-  //       this.text_length() //method1 will execute at pageload
-  // },
+    //    mounted:function(){
+    //       this.text_length() //method1 will execute at pageload
+    // },
 
     data: {
-        
+
         text_in_textarea: "",
 
         characters_with_whitespaces: 0,
@@ -66,22 +70,26 @@ let app = new Vue({
         no_of_Keyword_appear: 0,
 
         //Scane site SEO
-        domain_url:'',
+        domain_url: '',
 
         //footer content
-        current_year:0,
+        current_year: 0,
 
     },
 
-  created:function() {
+    created: function () {
 
         let d = new Date();
         this.current_year = d.getFullYear();
     },
 
     methods: {
-  
-        text_length: function() {
+
+        reset() {
+            this.text_in_textarea = '';
+        },
+
+        text_length: function () {
             this.characters_with_whitespaces = this.text_in_textarea
                 .replace(/[\r\n\x0B\x0C\u0085\u2028\u2029]+/g, "")
                 .trim().length;
@@ -111,10 +119,10 @@ let app = new Vue({
 
                     this.no_of_Keyword_appear = checkWord.length;
                     this.Keyword_density_percentage = ((checkWord.length / this.words_count) * 100)
-                    .toFixed(2);
+                        .toFixed(2);
 
                 } else {
-                    
+
                     this.Keyword_density_percentage = 0;
                     this.no_of_Keyword_appear = 0;
                 }
@@ -132,18 +140,17 @@ let app = new Vue({
             if (this.Keyword_density_field == "" || this.text_in_textarea == "") {
                 this.Keyword_density_percentage = 0;
                 this.no_of_Keyword_appear = 0;
-            }  
+            }
         },
 
-        text_length_in_pdf:function(){
+        text_length_in_pdf: function () {
             axios.get('/getTxt').then(res => {
                 console.log(res.data);
                 this.text_in_textarea = res.data;
                 // this.words_count  = res.data.words;
 
                 this.text_length();
-            }
-              ).catch(error =>  console.log(error));
+            }).catch(error => console.log(error));
         },
     }
 });

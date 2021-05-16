@@ -3,35 +3,57 @@
 use Illuminate\Support\Facades\Route;
 
 
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/welcome', fn () => view('welcome'));
-
-
-// Route::get('/', fn () => view('layouts.master'));
-// Route::get('/keyword–density–calculator–tool', fn () => view('posts.post1'));
-Route::get('/', 'postController@home');
-Route::get('/keyword–density–calculator–tool', 'postController@keywordCalculator');
-
-// Route::get('privacy–policy', fn () => view('pages.privacy'));
-// Route::get('about–us', fn () => view('pages.about'));
-// Route::get('disclaimer', fn () => view('pages.disclaimer'));
-
-Route::get('privacy–policy', 'pageController@privacy');
-Route::get('about–us', 'pageController@about');
-Route::get('disclaimer', 'pageController@disclaimer');
-
 Route::post('uploadpdf', 'fileController@uploadpdf')->name('uploadpdf');
-Route::get('pdf–to–text–converter–and–words–counter', 'fileController@load');
-Route::get('pdf–to–text–converter', 'fileController@pdfhome')->name('pdfhome');;
+Route::get('pdf-to-text-converter', 'fileController@pdfhome')->name('pdfhome');;
 Route::get('getTxt', 'fileController@read');
+
+
+Route::get('star', function(){
+    return view('layouts.templates.tools');
+});
+
+Route::get('insert', function(){
+    $b = new App\Blog();
+
+    $b->type= 0;
+    $b->slug= 'post3';
+    $b->title='the title post 3'; 
+    $b->excerpt='the excerpt 3'; 
+    $b->tags='all tags 3'; 
+    $b->featured_image_url='google.com'; 
+    $b->focus_keyword='the keyword here';
+    $b->body='finally body here';
+    $b->save();
+    return true;
+
+
+
+    return view('layouts.templates.blog');
+});
+
+Route::get('single', function(){
+    return view('layouts.templates.single');
+});
+
+// laravel ui routes
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+//posts and pages
+Route::get('/', 'BlogController@index');
+Route::get('/blog', 'BlogController@blog');
+// Route::get('keyword-density-calculator-tool', 'postController@keywordCalculator');
+// Route::get('privacy', 'pageController@privacy');
+// Route::get('about', 'pageController@about');
+// Route::get('disclaimer', 'pageController@disclaimer');
+
+//admin posts and pages
+Route::post('submit', 'BlogController@store')->middleware('auth');
+Route::get('admin-posts', 'BlogController@adminPostsList')->middleware('auth');
+Route::get('edit/{slug}', 'BlogController@adminEdit')->middleware('auth');
+Route::patch('update', 'BlogController@adminUpdate')->middleware('auth');
+Route::delete('delete', 'BlogController@adminDelete')->middleware('auth');
+
+Route::get('/{slug}', 'BlogController@show');
+
+

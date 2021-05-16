@@ -1,61 +1,84 @@
+
+
 <template>
-  <div class="row">
-    
-<div class="card">
-  <div class="card-body">
-    <div class="col-md-12">
-      <div class="row">
-        
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fa fa-user mr-2"></i> -->
-            Characters
-          </p>
-          <h3 v-text="this.$parent.character_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">2.7% increase</label> -->
-        </div>
-        <div class="col-md-3 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-hourglass-half mr-2"></i> -->
-            Characters with Whitespaces
-          </p>
-          <h3 v-text="this.$parent.characters_with_whitespaces"></h3>
-          <!-- <label class="badge badge-outline-danger badge-pill">30% decrease</label> -->
-        </div>
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-cloud-download-alt mr-2"></i> -->
-            Words
-          </p>
-          <h3 v-text="this.$parent.words_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">12% increase</label> -->
-        </div>
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-check-circle mr-2"></i> -->
-            Sentences
-          </p>
-          <h3 v-text="this.$parent.sentence_count"></h3>
-          <!-- <label class="badge badge-outline-success badge-pill">57% increase</label> -->
-        </div>
-      
-        <div class="col-md-2 col-sm-6 ">
-          <p>
-            <!-- <i class="icon-sm fas fa-circle-notch mr-2"></i> -->
-            Keyword Density
-          </p>
-          <h3>{{this.$parent.Keyword_density_percentage}} %</h3>
-          <em class="keyword_status" v-if="this.$parent.Keyword_density_percentage !== 0"><small>Repeated <span  v-text="this.$parent.no_of_Keyword_appear"></span> times</small></em>
-          <!-- <label class="badge badge-outline-danger badge-pill">16% decrease</label> -->
-        </div>
-    </div>
-      </div>
-  </div>
-  <div class="card-footer">
-    <dir class="col-md-12">
-      <div class="row">
-           <div class="col-md-2 ">
-      <label class="custom-file-upload">
+  <div>
+                    <div class="row">
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.words_count"></span><br> Words</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.character_count"></span><br> Characters</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.characters_with_whitespaces"></span> <br>characters & whitespaces</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span v-text="this.$parent.sentence_count"></span> <br> Sentences</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 grid-margin">
+                            <div class="card">
+                                <div class="card-body py-3">
+                                    <div class="d-flex flex-row justify-content-center align-items">
+                                        <!-- <i class="mdi mdi-facebook text-facebook icon-md"></i> -->
+                                        <p class="font-weight-semibold"><span  v-text="this.$parent.paragraph_count"></span> <br>Paragraphs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <h5 class="card-title mb-4">Keywor Density</h5> -->
+
+                                    <div class="row">
+
+                                               <div class="ticket-details col-md-3">
+                      <!-- <label for="pdfFile">Upload PDF File</label> -->
+                      <!-- <label class=" text-white p-1" for="pdfFile" style="background: rgb(18, 127, 252);display: inline-block;border-radius: 4px;cursor: pointer;">
+                        <input type="file" id="pdfFile" style="display: none;">
+                        <i class="mdi mdi-file-pdf"></i> Upload PDF File
+
+                      </label> -->
+
+                         <label class="custom-file-upload">
                <input type="file" id="file" name="pdffile" v-on:change="fileupload" >
         <span v-if="loading == 0">Upload PDF File</span> <span v-if="loading == 1">
           <img src="/images/loader.gif" width="12px">&nbsp;Please wait...</span>
@@ -65,39 +88,32 @@
                <!-- <button v-on:click='fileupload'>upload file</button> -->
 
                <input type="hidden" v-model="filepath" >
-               <!-- <button class="btn btn-info">Get Text</button> -->
-            </div>
-                <div class="col-md-4">
-                  <!-- <label><strong>Input your Keyword to calculate keyword density</strong></label> -->
-                <input
-                type="text"
-                class="form-control"
-                name="k_field"
-                placeholder="Focus keyword to find density"
-                v-model="input_text"
-                v-on:keyup="emit_input"
-                v-on:change="emit_input"
-                v-on:input="emit_input"
-                v-on:paste="emit_input"
 
-                />
-            </div>
 
-        <!--       <div class="col-md-3">
-                <button class="btn btn-info">
-                <strong>Keyword Density :</strong>
-                <strong v-text="this.$parent.Keyword_density_percentage" ></strong> %</button>
+                    </div>
+      
 
-            </div> -->
-         
-        
-      </div>
-    </dir>
+                                        <div class="ticket-details col-md-4 my-1">
+                                            <input class="form-control bg-light"        
+                                            name="k_field"
+                                            placeholder="Input keyword to find keyword density"
+                                            v-model="input_text"
+                                            v-on:keyup="emit_input"
+                                            v-on:change="emit_input"
+                                            v-on:input="emit_input"
+                                            v-on:paste="emit_input">
 
-              
-  </div>
-</div>
-</div>
+                                        </div>
+
+                                        <div class="ticket-details col-md-4 my-1">
+                                            <label class="p-1 bg-light" style="display: inline-block;border-radius: 4px;cursor: pointer;"> 
+                                             Keyword Density is &nbsp;<span v-text="this.$parent.Keyword_density_percentage"></span>% &amp;&nbsp;repeats: <span v-text="this.$parent.no_of_Keyword_appear"></span> <span v-if="this.$parent.no_of_Keyword_appear > 1">times</span><span v-else >time</span> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
 
   </div>
 </template>
@@ -108,33 +124,19 @@ input[type="file"] {
 }  
 
 .custom-file-upload {
-    border: 1px solid #000;
+    border: 1px solid rgb(202, 197, 197);
     display: inline-block;
-    padding: .9rem;
+    padding: .4rem;
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 10px;
 }
-input[type='text']{
-  padding: 1.3rem;
-  border:1px solid #000;
-}
-  button{
-   margin-bottom: 1.5rem; 
+  .font-weight-semibold{
+      font-weight: 600;
+      font-size: .9rem;
   }
-  p{
-    height: 20px;
-  }
-  .card{
-    margin-bottom: 1px;
-    border:1px solid #eee;
-  }
-  .keyword_status{
-    color: #00bcd4;
-  }
-  .text-danger{
-    color: red;
-  }
+  
+
 </style>
 
 <script type="text/javascript">
@@ -153,6 +155,7 @@ export default {
             this.$parent.Keyword_density_field = this.input_text;
             this.$emit("keyword_changed");
         },
+    
         fileupload: function() {
               this.loading = 1;
               this.fileError =0;
