@@ -8,32 +8,32 @@ Route::get('pdf-to-text-converter', 'fileController@pdfhome')->name('pdfhome');;
 Route::get('getTxt', 'fileController@read');
 
 
-Route::get('star', function(){
-    return view('layouts.templates.tools');
-});
+// Route::get('star', function(){
+//     return view('layouts.templates.tools');
+// });
 
-Route::get('insert', function(){
-    $b = new App\Blog();
+// Route::get('insert', function(){
+//     $b = new App\Blog();
 
-    $b->type= 0;
-    $b->slug= 'post3';
-    $b->title='the title post 3'; 
-    $b->excerpt='the excerpt 3'; 
-    $b->tags='all tags 3'; 
-    $b->featured_image_url='google.com'; 
-    $b->focus_keyword='the keyword here';
-    $b->body='finally body here';
-    $b->save();
-    return true;
+//     $b->type= 0;
+//     $b->slug= 'post3';
+//     $b->title='the title post 3'; 
+//     $b->excerpt='the excerpt 3'; 
+//     $b->tags='all tags 3'; 
+//     $b->featured_image_url='google.com'; 
+//     $b->focus_keyword='the keyword here';
+//     $b->body='finally body here';
+//     $b->save();
+//     return true;
 
 
 
-    return view('layouts.templates.blog');
-});
+//     return view('layouts.templates.blog');
+// });
 
-Route::get('single', function(){
-    return view('layouts.templates.single');
-});
+// Route::get('single', function(){
+//     return view('layouts.templates.single');
+// });
 
 // laravel ui routes
 Auth::routes();
