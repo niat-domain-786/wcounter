@@ -26,7 +26,7 @@
     {{-- <link rel="stylesheet" href="{{ asset('template/assets/css/shared/style.css')}}"> --}}
     <link rel="stylesheet" href="{{ asset('css/template.min.css')}}">
 
-    <link rel="shortcut icon" href="{{ asset('template/assets/images/favicon.png')}}" />
+    <link rel="shortcut icon" href="{{ asset('template/assets/images/favicon.svg')}}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,700">
      <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css"
@@ -40,9 +40,11 @@
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
                 <a class="navbar-brand brand-logo" href="{{ url('/') }}">
-                    <img src="{{ asset('template/assets/images/logo_11.svg')}}" alt="logo" /> </a>
+                    <img src="{{ asset('template/assets/images/logos/logo.png')}}" alt="logo" /> </a>
                 <a class="navbar-brand brand-logo-mini" href="{{ url('/') }}">
-                    <img src="{{ asset('template/assets/images/logo-mini_11.svg')}}" alt="logo" /> </a>
+                    <img src="{{ asset('template/assets/images/logos/logomini.svg')}}" alt="logo" />
+                  
+                 </a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
